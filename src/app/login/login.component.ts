@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserBackendService } from '../../services/user-backend.service';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,6 +12,13 @@ export class LoginComponent implements OnInit {
   constructor(
     private userBackendService: UserBackendService
   ) { }
+
+  name = new FormControl('');
+  password = new FormControl('');
+
+  updateName() {
+    this.name.setValue('Nancy');
+  }
 
   ngOnInit(
     

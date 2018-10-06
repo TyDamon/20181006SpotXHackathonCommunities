@@ -10,12 +10,11 @@ import { SignupComponent } from './signup/signup.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'home',      component: HomeComponent}
-  // {
-  //   path: 'heroes',
-  //   component: HeroListComponent,
-  //   data: { title: 'Heroes List' }
-  // },
+  { path: 'home',      component: HomeComponent},
+  {
+    path: 'signUp',
+    component: SignupComponent
+  }
   // { path: '',
   //   redirectTo: '/heroes',
   //   pathMatch: 'full'

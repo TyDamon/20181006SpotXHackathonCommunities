@@ -7,6 +7,7 @@ import { RegisterNewUserComponent } from './register-new-user/register-new-user.
 import { LoginComponent } from './login/login.component';
 import { UserBackendService } from '../services/user-backend.service';
 import { SignupComponent } from './signup/signup.component';
+import { MeetingComponent } from './meeting/meeting.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -29,6 +30,7 @@ const appRoutes: Routes = [
     RegisterNewUserComponent,
     LoginComponent,
     SignupComponent,
+    MeetingComponent,
     
   ],
   imports: [

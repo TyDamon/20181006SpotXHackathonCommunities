@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterNewUserComponent } from './register-new-user/register-new-user.component';
 import { LoginComponent } from './login/login.component';
+import { UserBackendService } from '../services/user-backend.service';
 
 const appRoutes: Routes = [
-  { path: ' ', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'home',      component: HomeComponent}
   // {
   //   path: 'heroes',
@@ -31,10 +32,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {
-      enableTracing: true
+      enableTracing: false
     })
   ],
-  providers: [],
+  providers: [UserBackendService],
   bootstrap: [AppComponent]
 })
 

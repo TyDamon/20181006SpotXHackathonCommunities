@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterNewUserComponent } from './register-new-user/register-new-user.component';
 import { LoginComponent } from './login/login.component';
 import { UserBackendService } from '../services/user-backend.service';
+import { SignupComponent } from './signup/signup.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
@@ -27,7 +28,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     RegisterNewUserComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent,
+    
   ],
   imports: [
     BrowserModule,

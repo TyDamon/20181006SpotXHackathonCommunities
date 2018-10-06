@@ -15,6 +15,9 @@ const appRoutes: Routes = [
   {
     path: 'signUp',
     component: SignupComponent
+  }, {
+    path: 'meeting',
+    component: MeetingComponent
   }
   // { path: '',
   //   redirectTo: '/heroes',
